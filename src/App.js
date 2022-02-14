@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Calendar from 'react-google-calendar'
 
 function App() {
+  const calendarProps = {};
   return (
+    <>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +22,8 @@ function App() {
         </a>
       </header>
     </div>
+    <Calendar {...calendarProps} />
+  </>    
   );
 }
 
